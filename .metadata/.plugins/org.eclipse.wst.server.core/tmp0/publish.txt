@@ -1,0 +1,4 @@
+#GlassFish 3
+#Sun Jun 25 08:29:33 EDT 2023
+org.eclipse.jst.jee.server\:WebStudentRESTProject=/Users/macbookpro2016/Desktop/Vanier College/Block4/WebServises/glassfish7/glassfish/domains/domain1/eclipseApps/WebStudentRESTProject
+org.eclipse.jst.jee.server\:WebFacultyRESTProject=/Users/macbookpro2016/Desktop/Vanier College/Block4/WebServises/glassfish7/glassfish/domains/domain1/eclipseApps/WebFacultyRESTProject

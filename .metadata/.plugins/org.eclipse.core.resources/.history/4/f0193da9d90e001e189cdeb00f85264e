@@ -1,0 +1,9 @@
+package clientBillingREST;
+
+public class Billing {
+
+	public Billing() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

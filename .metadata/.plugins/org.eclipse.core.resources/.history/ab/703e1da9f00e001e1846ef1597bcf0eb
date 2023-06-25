@@ -1,0 +1,36 @@
+package clientCourseREST;
+
+import org.glassfish.jersey.client.ClientConfig;
+
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
+
+public class ClientCourseREST {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String url = "http://localhost:8080/WebCourseRESTProject/rest/WebCourse";
+		ClientConfig config = new ClientConfig();
+		Client client  = ClientBuilder.newClient(config);
+		WebTarget target =  client.target(url);
+		
+		
+		String response = target.request()
+				.accept(MediaType.TEXT_PLAIN)
+				.get(String.class);
+		
+		System.out.println("Course HTML Output:\n"+response +"\n");
+		
+		response = target.request()
+				.accept(MediaType.TEXT_HTML)
+				.get(String.class);
+		
+		System.out.println("Course HTML Output:\n"+response +"\n");
+		
+		
+	}
+
+}
